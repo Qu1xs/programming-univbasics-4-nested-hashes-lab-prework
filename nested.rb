@@ -82,18 +82,12 @@ def adding_matz
           :known_for => "Unix",
           :languages => ["C"]
         }
-=begin
-        ,
-        :yukihiro_matsumoto => {
-          :known_for => "Ruby",
-          :languages => ["Lisp", "C"]
-        }
-=end
      }
      
-  programmer_hash[yukihiro_matsumoto] = {}
-
-    
+  programmer_hash[:yukihiro_matsumoto] = {}
+  yukihiro_matsumoto[:known_for] = "Ruby"
+  yukihiro_matsumoto[:languages] = ["Lisp", "C"]
+  puts programmer_hash  
 end
 
 def changing_alan
